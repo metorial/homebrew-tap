@@ -5,21 +5,21 @@
 class Metorial < Formula
   desc "Official CLI for Metorial integrations and MCP tools"
   homepage "https://metorial.com"
-  version "0.1.4"
+  version "0.1.5"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/metorial/cli/releases/download/v0.1.4/metorial_0.1.4_darwin_amd64.tar.gz"
-      sha256 "9e9ae7ea0cbefc43dbd71ac8ebaa3fb136030fa94faf314d3078c01b4992a026"
+      url "https://github.com/metorial/cli/releases/download/v0.1.5/metorial_0.1.5_darwin_amd64.tar.gz"
+      sha256 "08a304a615d3cad67e63410e9197b386801571bb95009157652d9462476b7ba0"
 
       define_method(:install) do
         bin.install "metorial"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/metorial/cli/releases/download/v0.1.4/metorial_0.1.4_darwin_arm64.tar.gz"
-      sha256 "4fec158372b372bde66a654c1c5636b90aae5ed4201e4bfb985c1562997fcb39"
+      url "https://github.com/metorial/cli/releases/download/v0.1.5/metorial_0.1.5_darwin_arm64.tar.gz"
+      sha256 "c04f6af0034fccfad62b50ebb9147c448fd0b918161f35ded830a8d88eab6739"
 
       define_method(:install) do
         bin.install "metorial"
@@ -29,15 +29,15 @@ class Metorial < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/metorial/cli/releases/download/v0.1.4/metorial_0.1.4_linux_amd64.tar.gz"
-      sha256 "3eb455b51f043d7a2c776b5b64f3d272432f2ec59c87899c267b5aa7879fcc97"
+      url "https://github.com/metorial/cli/releases/download/v0.1.5/metorial_0.1.5_linux_amd64.tar.gz"
+      sha256 "a23d537de31b3cbba104c87a652a65528726816f0ad0d55088c96d695768b876"
       define_method(:install) do
         bin.install "metorial"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/metorial/cli/releases/download/v0.1.4/metorial_0.1.4_linux_arm64.tar.gz"
-      sha256 "4cc56413a80da7e83686d73472051c325a24e652e8ac3b30c643c7c9e55c6778"
+      url "https://github.com/metorial/cli/releases/download/v0.1.5/metorial_0.1.5_linux_arm64.tar.gz"
+      sha256 "04aa6e4c820b7dfa9ebcf2148cafde03898f78da9ea20840b054c64992e8cc58"
       define_method(:install) do
         bin.install "metorial"
       end
