@@ -5,21 +5,21 @@
 class MetorialAdmin < Formula
   desc "Official admin CLI for the Metorial Magnetar API"
   homepage "https://metorial.com"
-  version "0.1.4"
+  version "0.1.8"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/metorial/cli/releases/download/v0.1.4/metorial-admin_0.1.4_darwin_amd64.tar.gz"
-      sha256 "de9768befdd5e649ee3ec809db25c662005ae342e5842a052d76674f400eb5b3"
+      url "https://github.com/metorial/cli/releases/download/v0.1.8/metorial-admin_0.1.8_darwin_amd64.tar.gz"
+      sha256 "b732855916b795adcdf09784ba0c28bae40588a70dfc7bda60b00efd4fcf821b"
 
       define_method(:install) do
         bin.install "metorial-admin"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/metorial/cli/releases/download/v0.1.4/metorial-admin_0.1.4_darwin_arm64.tar.gz"
-      sha256 "c5f4dfbba6a03cd1a50336bfca3bd327a1de13303476cc85663856f58012a37b"
+      url "https://github.com/metorial/cli/releases/download/v0.1.8/metorial-admin_0.1.8_darwin_arm64.tar.gz"
+      sha256 "7922e4eb149c521b0960014e3e8a20562f69892097ee93cf74258d4115ee4cd6"
 
       define_method(:install) do
         bin.install "metorial-admin"
@@ -29,15 +29,15 @@ class MetorialAdmin < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/metorial/cli/releases/download/v0.1.4/metorial-admin_0.1.4_linux_amd64.tar.gz"
-      sha256 "60b9f9951f6668ef82dbdca1f4cb5b9cad2f26e0fb626b110b52c27735a9a4f3"
+      url "https://github.com/metorial/cli/releases/download/v0.1.8/metorial-admin_0.1.8_linux_amd64.tar.gz"
+      sha256 "6afad0e8ad6f4956eac74e5a9376f30d1725a0e0ead17305b52cef58b485e9d4"
       define_method(:install) do
         bin.install "metorial-admin"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/metorial/cli/releases/download/v0.1.4/metorial-admin_0.1.4_linux_arm64.tar.gz"
-      sha256 "917e23c59aa3056ea1bba2f08135537c733665d8e4a6a879763082144fd85d4e"
+      url "https://github.com/metorial/cli/releases/download/v0.1.8/metorial-admin_0.1.8_linux_arm64.tar.gz"
+      sha256 "16d0639be778e2404d671294858c57a521235d3b1d3beacac10dbd224ee9bd8f"
       define_method(:install) do
         bin.install "metorial-admin"
       end
